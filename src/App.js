@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
   const [state, setState] = useState({
     activeDataset:'dataset2',
-    activeLayer: {name:'lod22', id:1570079, label:'Lod 2'},
+    activeLayer: {name:'lod22', id:1570144, label:'Lod 2'},
   });
 
   const datasets = {
@@ -20,7 +20,7 @@ function App() {
       // {name:'lod0',id:0, label:'Lod 0'},
       {name:'lod12', id:1570077, label:'Lod 1.2'},
       {name:'lod13', id:1570078, label:'Lod 1.3'},
-      {name:'lod22', id:1570079, label:'Lod 2'},
+      {name:'lod22', id:1570144, label:'Lod 2'},
     ]
   };
 

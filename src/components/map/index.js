@@ -61,8 +61,8 @@ const MapComponent = (props) => {
 
 
     const layers = [
+        ...tiles,
         geoLayer,
-        ...tiles
     ];
 
     let centers = { 
