@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.side-tab {
+  width: 200px;
+  border-radius: 5px;
+  
+  box-shadow: 0px 0px 0.5rem rgb(94, 94, 94);
+  height: auto;
+  
+  position: absolute;
+  left:0;
+  top: 0;
+  margin:10px;
+  z-index: 2;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.side-tab .header-section {
+  padding:0.5rem;
+  background-color: blueviolet;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.side-tab .body {
+  padding:0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.layer-toggler {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.layer-toggler .toggle-btn {
+  background-color: #ddd;
+  padding:0.375rem 0.5rem;
+  flex: 1;
+  cursor: pointer;
+  /* margin-left: 5px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.layer-toggler .toggle-btn:first-child {
+  border-right: 1.5px solid #fff;
+}
+
+.toggle-btn.active {
+  background-color: rgb(118, 72, 72);
+  color:#fff;
+}
+
+.input-div {
+  margin-top: 4px;
 }
