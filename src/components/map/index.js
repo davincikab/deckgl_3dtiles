@@ -73,9 +73,9 @@ const MapComponent = (props) => {
     console.log(props.layers);
     return (
         <DeckGL
-          initialViewState={{...INITIAL_VIEW_STATE, ...centers[props.dataset]}}
-          controller={true}
-          layers={layers} 
+            initialViewState={{...INITIAL_VIEW_STATE, ...centers[props.dataset]}}
+            controller={true}
+            layers={layers} 
         >
             <Map 
                 mapboxAccessToken={MAPBOX_ACCESS_TOKEN} 
